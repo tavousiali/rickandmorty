@@ -59,7 +59,7 @@ export default function SearchAppBar(props: any) {
             <AppBar position="static">
                 <Toolbar>
                     <Typography
-                        variant="h6"
+                        variant="h5"
                         noWrap
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
