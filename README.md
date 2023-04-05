@@ -8,7 +8,8 @@ In the project directory, you can run:
 
 ### `yarn create react-app . --template typescript`
 ### `yarn add @mui/material @emotion/react @emotion/styled`
-### `npm install @mui/icons-material'
+### `yarn add @mui/icons-material`
 
 
-## [Demo Page:](http://localhost:3000)
+
+### [Demo Page](http://localhost:3000)
