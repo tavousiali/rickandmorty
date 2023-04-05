@@ -1,9 +1,11 @@
 import React from 'react';
+import SearchAppBar from './components/Appbar';
 
 function App() {
   return (
     <div>
-      Hello World
+      <SearchAppBar />
+
     </div>
   );
 }
