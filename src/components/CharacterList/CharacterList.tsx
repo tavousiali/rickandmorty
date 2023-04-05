@@ -6,15 +6,18 @@ import CharacterResponse from '../../models/CharacterResponse';
 import CharacterResult from '../../models/CharacterResult';
 
 
-export default function List(props: any) {
+export default function List(props: { searchText: string }) {
     const [characters, setCharacters] = useState([] as CharacterResult[])
 
     useEffect(() => {
-        fetchCharacterHandler()
-    }, [])
+        fetchCharacterHandler(props.searchText)
+    }, [props.searchText])
 
-    function fetchCharacterHandler() {
+    function fetchCharacterHandler(searchText: string) {
         let url = 'https://rickandmortyapi.com/api/character';
+        if (searchText) {
+            url += `/?name=${searchText}`
+        }
         fetch(url)
             .then((response) => { return response.json() })
             .then((data: CharacterResponse) => {
