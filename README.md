@@ -12,4 +12,4 @@ In the project directory, you can run:
 
 ----
 
-### The Demo Page on Vercel is [here](https://rickandmorty-seven-tau.vercel.app/)
+### The Demo Page on Vercel is [here](https://rickandmorty-seven-tau.vercel.app/).

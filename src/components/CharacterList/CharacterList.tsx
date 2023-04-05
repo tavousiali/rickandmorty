@@ -29,7 +29,7 @@ export default function List(props: { searchText: string }) {
         <Box sx={{ flexGrow: 1, padding: '0.5rem' }}>
             {characters && <Grid container spacing={2}>
                 {characters.map(character => (
-                    <Grid key={character.id} item sm={12} md={6} lg={4} xl={3}>
+                    <Grid key={character.id} item sm={12} md={6} lg={4} xl={3} sx={{ width: '100%' }} >
                         <CharacterListItem character={character} />
                     </Grid>
                 ))}
